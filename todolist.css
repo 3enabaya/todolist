@@ -1,0 +1,204 @@
+body{
+  background-color: rgb(14, 14, 33);
+}
+
+.cloud-section{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -18;
+}
+.cloud-section > div{
+    position: absolute;
+    z-index: -1;
+    -webkit-animation:  move  13s  infinite , roll 70.343s infinite , opa  4s  infinite  ;
+}
+@keyframes move {
+0% { transform: translate(0, 30%); -webkit-transform: translate(0, 30%); -moz-transform: translate(0, 30%); -ms-transform: translate(0, 30%); -o-transform: translate(0, 30%); }
+50% { transform: translate(0, 0); -webkit-transform:; -moz-transform:; -ms-transform:; -o-transform:; }
+100%{ transform: translate(0, 30%); -webkit-transform: translate(0, 30%); -moz-transform: translate(0, 30%); -ms-transform: translate(0, 30%); -o-transform: translate(0, 30%); }
+}
+/* @keyframes roll {
+50% {left: 10px;}
+100% {r: 10px;}
+} */
+@keyframes opa {
+    0% {opacity: .3 ;}
+    100% {opacity: 1 ;}}
+ .cloud1{
+    top: 1%;   
+    left: 10%;
+}
+.cloud2{
+    left: 90%;
+    top: 2%;
+}
+.cloud4{
+    top: 50%;   
+    left: 70%;
+}.cloud3{
+    bottom: 1;
+    left: 30%;   
+}.cloud5{
+    bottom: 90%;   
+    left: 20%;
+}.cloud7{
+    top: 44%;
+    right: 1%;
+}.cloud10{
+    top: 70%;
+    left: 1%;
+} 
+.cloud9{
+    top: 70%;
+    left: 1%;
+} .cloud8{
+    top: 70%;
+    left: 1%;
+} .cloud6{
+    top: 50%;
+    left: 33%;
+} .cloud13{
+    top: 70%;
+    left: 18%;
+} .cloud12{
+    top: 40%;
+    left: 6%;
+} 
+.cloud11{
+    bottom: 1%;   
+    left: 80%;
+}
+
+.todo{
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid rgb(245, 240, 240);
+    max-width: 90%;
+    background-color:  rgb(14, 14, 33);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    font-size:50px;
+    -o-border-radius:5px;
+    font-family:'Times New Roman', Times, serif;
+    
+  
+}
+.check{
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+    width: 80px;
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+}
+.list{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    border: 1px solid rgb(245, 240, 240);
+    max-width: 90%;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: transparent;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.to-do-section{
+    z-index: 333333333333;
+    position: absolute;
+    top: 1px;
+    margin-top: 9px;
+    margin: 0 auto;
+    max-width: 90%;
+    background-color: transparent;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+.plis{
+    cursor: pointer;
+    color: rgb(14, 14, 33);
+}
+input{
+     font-size: 20px;
+     padding: 6px 10px;
+    width: 350px;
+     background-color: rgba(255, 255, 255, 0.999);
+      border-radius: 5px; 
+      -webkit-border-radius: 
+      5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; -moz-text-decoration-line: overline;
+}
+.div{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, 0.847);
+    max-width: 90%;
+    color: rgb(14, 14, 33);
+    position: relative;
+    padding:0 20px;
+    margin-top: 5px;
+    overflow:auto;
+    font-size:30px;
+    border-radius:5px;
+    background-color:white;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+
+button{
+    background-color:#3ab37c;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.remove{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 6px;
+    color: black;
+}
+.task div input{
+    width: 40px;
+    cursor: pointer;
+
+  
+}
+
+.div.active :not(button){
+    text-decoration: line-through red  ;
+    -webkit-text-decoration:  line-through red;
+    -moz-text-decoration:  line-through red;
+    -ms-text-decoration:  line-through red;
+    -o-text-decoration:  line-through red;
+}
+@media (max-width:800px){
+.todo{
+    font-size: 1rem;
+}
+input{
+   width: 200px;
+}}
