@@ -76,18 +76,19 @@ body{
     border: 1px solid rgb(245, 240, 240);
     max-width: 90%;
     background-color:  rgb(14, 14, 33);
-    border-radius: 5px;  
+    border-radius: 5px;
     color: white;
     font-weight: bold;
     text-align: center;
     padding: 20px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
     font-size:50px;
-    -o-border-radius: 5px;
+    -o-border-radius:5px;
     font-family:'Times New Roman', Times, serif;
-    -moz-text-decoration-line: line-through;
+    
+  
 }
 .check{
     position: absolute;
@@ -119,7 +120,8 @@ body{
     z-index: 333333333333;
     position: absolute;
     top: 1px;
-    margin: 9px;
+    margin-top: 9px;
+    margin: 0 auto;
     max-width: 90%;
     background-color: transparent;
     left: 50%;
@@ -187,7 +189,10 @@ button{
 
 .div.active :not(button){
     text-decoration: line-through red  ;
-
+    -webkit-text-decoration:  line-through red;
+    -moz-text-decoration:  line-through red;
+    -ms-text-decoration:  line-through red;
+    -o-text-decoration:  line-through red;
 }
 @media (max-width:800px){
 .todo{
