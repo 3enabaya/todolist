@@ -18,7 +18,10 @@ body{
 50% { transform: translate(0, 0); -webkit-transform:; -moz-transform:; -ms-transform:; -o-transform:; }
 100%{ transform: translate(0, 30%); -webkit-transform: translate(0, 30%); -moz-transform: translate(0, 30%); -ms-transform: translate(0, 30%); -o-transform: translate(0, 30%); }
 }
-
+/* @keyframes roll {
+50% {left: 10px;}
+100% {r: 10px;}
+} */
 @keyframes opa {
     0% {opacity: .3 ;}
     100% {opacity: 1 ;}}
@@ -70,7 +73,7 @@ body{
     margin: 0 auto;
     position: relative;
     border: 1px solid rgb(245, 240, 240);
-    max-width: 100%;
+    max-width: 500px;
     background-color:  rgb(14, 14, 33);
     border-radius: 5px;  
     color: white;
@@ -95,7 +98,7 @@ body{
     margin: 0 auto;
     justify-content: space-around;
     border: 1px solid rgb(245, 240, 240);
-    max-width: 100%;
+    width: 500px;
     text-align: center;
     color: white;
     border-radius: 5px;
@@ -124,7 +127,7 @@ body{
 }
 input{
     
-     max-width: 100%; font-size: 20px;  
+     width: 350px; font-size: 20px;  
      padding: 6px 10px;
      background-color: rgba(255, 255, 255, 0.999);
       border-radius: 5px; 
@@ -135,7 +138,7 @@ input{
     display: flex;
     justify-content: space-between;
     border: 1px solid rgba(255, 255, 255, 0.847);
-    max-width: 100%;
+    width: 500px;
     color: rgb(14, 14, 33);
     position: relative;
     padding:0 20px;
@@ -171,7 +174,7 @@ button{
     width: 40px;
     cursor: pointer;
 
-
+  
 }
 
 .div.active :not(button){
