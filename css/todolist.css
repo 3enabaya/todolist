@@ -69,11 +69,12 @@ body{
     bottom: 1%;   
     left: 80%;
 }
+
 .todo{
     margin: 0 auto;
     position: relative;
     border: 1px solid rgb(245, 240, 240);
-    max-width: 500px;
+    max-width: 90%;
     background-color:  rgb(14, 14, 33);
     border-radius: 5px;  
     color: white;
@@ -83,22 +84,27 @@ body{
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
-    font-size: 50px;
+    font-size:50px;
     -o-border-radius: 5px;
     font-family:'Times New Roman', Times, serif;
     -moz-text-decoration-line: line-through;
 }
 .check{
     position: absolute;
-    bottom:19px;
+    top:50%;
+    transform: translate(0,-50%);
     width: 80px;
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
 }
 .list{
     display: flex;
     margin: 0 auto;
     justify-content: space-around;
     border: 1px solid rgb(245, 240, 240);
-    width: 500px;
+    max-width: 90%;
     text-align: center;
     color: white;
     border-radius: 5px;
@@ -113,6 +119,8 @@ body{
     z-index: 333333333333;
     position: absolute;
     top: 1px;
+    margin: 9px;
+    max-width: 90%;
     background-color: transparent;
     left: 50%;
     transform: translate(-50%);
@@ -126,9 +134,9 @@ body{
     color: rgb(14, 14, 33);
 }
 input{
-    
-     width: 350px; font-size: 20px;  
+     font-size: 20px;
      padding: 6px 10px;
+    width: 350px;
      background-color: rgba(255, 255, 255, 0.999);
       border-radius: 5px; 
       -webkit-border-radius: 
@@ -138,7 +146,7 @@ input{
     display: flex;
     justify-content: space-between;
     border: 1px solid rgba(255, 255, 255, 0.847);
-    width: 500px;
+    max-width: 90%;
     color: rgb(14, 14, 33);
     position: relative;
     padding:0 20px;
@@ -181,3 +189,10 @@ button{
     text-decoration: line-through red  ;
 
 }
+@media (max-width:800px){
+.todo{
+    font-size: 1rem;
+}
+input{
+   width: 200px;
+}}
