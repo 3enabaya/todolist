@@ -146,6 +146,7 @@ input{
 }
 .div{
     display: flex;
+    margin: 0 auto;
     justify-content: space-between;
     border: 1px solid rgba(255, 255, 255, 0.847);
     max-width: 90%;
@@ -153,7 +154,7 @@ input{
     position: relative;
     padding:0 20px;
     margin-top: 5px;
-    overflow:auto;
+ overflow: auto;
     font-size:30px;
     border-radius:5px;
     background-color:white;
@@ -202,6 +203,7 @@ button{
 input{
    width: 200px;
 }
-  .check{
-    width:50px;
+.check{
+width:50px;
+}
 }
