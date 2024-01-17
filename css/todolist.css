@@ -201,4 +201,7 @@ button{
 }
 input{
    width: 200px;
-}}
+}
+  .check{
+    width:50px;
+}
