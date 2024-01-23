@@ -1,7 +1,7 @@
 body{
   background-color: rgb(14, 14, 33);
 }
-
+/* cloud section */
 .cloud-section{
     position: relative;
     height: 100vh;
@@ -18,10 +18,7 @@ body{
 50% { transform: translate(0, 0); -webkit-transform:; -moz-transform:; -ms-transform:; -o-transform:; }
 100%{ transform: translate(0, 30%); -webkit-transform: translate(0, 30%); -moz-transform: translate(0, 30%); -ms-transform: translate(0, 30%); -o-transform: translate(0, 30%); }
 }
-/* @keyframes roll {
-50% {left: 10px;}
-100% {r: 10px;}
-} */
+
 @keyframes opa {
     0% {opacity: .3 ;}
     100% {opacity: 1 ;}}
@@ -69,7 +66,7 @@ body{
     bottom: 1%;   
     left: 80%;
 }
-
+/* todolist */
 .todo{
     margin: 0 auto;
     position: relative;
@@ -90,6 +87,7 @@ body{
     
   
 }
+/* checkbox */
 .check{
     position: absolute;
     top:50%;
@@ -144,6 +142,7 @@ input{
       -webkit-border-radius: 
       5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; -moz-text-decoration-line: overline;
 }
+/* tasks style */
 .div{
     display: flex;
     margin: 0 auto;
@@ -163,7 +162,6 @@ input{
     -ms-border-radius:5px;
     -o-border-radius:5px;
 }
-
 button{
     background-color:#3ab37c;
     color: white;
@@ -196,6 +194,7 @@ button{
     -ms-text-decoration:  line-through red;
     -o-text-decoration:  line-through red;
 }
+/* responsive */
 @media (max-width:800px){
 .todo{
     font-size: 1rem;
