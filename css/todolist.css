@@ -208,6 +208,9 @@ button{
 .todo{
     font-size: 1rem;
 }
+  .div{
+    font-size:15px;
+  }
 input{
     width: 150px;
 }
