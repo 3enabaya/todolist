@@ -106,7 +106,6 @@ body{
     border: 1px solid rgb(245, 240, 240);
     max-width: 500px;
     width: 500px;
-
     text-align: center;
     color: white;
     border-radius: 5px;
@@ -124,7 +123,6 @@ body{
     margin-top: 9px;
     margin: 0 auto;
     width: 500px;
-
     max-width: 500px;
     background-color: transparent;
     left: 50%;
@@ -140,7 +138,6 @@ body{
 }
 input{
      font-size: 20px;
-    
      padding: 6px 10px;
      width: 350px;
      background-color: rgba(255, 255, 255, 0.999);
@@ -204,12 +201,15 @@ button{
 }
 /* responsive */
 @media (max-width:800px){
-.div{ max-width:90%}
-body {
-    font-size:20px;
+.to-do-section , .list , .div , .todo{
+    max-width: 90%;
+    width: 90%;
+}
+.todo{
+    font-size: 1rem;
 }
 input{
-   width: 200px;
+    width: 350px;
 }
 .check{
 width:50px;
