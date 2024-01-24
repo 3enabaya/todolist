@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./css/todolist.css">
-    <link rel="stylesheet" href="./css/all.min.css">
     <link rel="icon" href="./pics/icons8-cloud-16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>todolist</title>
    
 </head>
 <body>
-<!--     clouds section    -->
 <div class="class">
 <div class="cloud-section"> 
 <div class="cloud1"> 
@@ -56,7 +57,7 @@
                 <svg  viewBox="0 0 2048 2048" width="70px" style="enable-background:new 0 0 2048 2048" xml:space="preserve"><path style="fill:rgb(223, 124, 58)" d="M576.257 1390.887C399.388 1390.887 256 1247.5 256 1070.617c0-88.441 35.854-168.502 93.797-226.459 57.957-57.957 138.032-93.797 226.459-93.797h18.995c0-236.797 191.951-428.748 428.748-428.748s428.748 191.951 428.748 428.748h18.995c176.869 0 320.257 143.374 320.257 320.257 0 88.441-35.854 168.502-93.797 226.473-57.957 57.943-138.032 93.797-226.459 93.797H576.257z"/></svg>
                 </div>  
                 <div class="cloud10">
-                    <svg  viewBox="0 0 2048 2048" width="150px" style="enable-background:new 0 0 2048 2048" xml:space="preserve"><path style="fill:rgb(35, 71, 231)42, 95, 95)" d="M576.257 1390.887C399.388 1390.887 256 1247.5 256 1070.617c0-88.441 35.854-168.502 93.797-226.459 57.957-57.957 138.032-93.797 226.459-93.797h18.995c0-236.797 191.951-428.748 428.748-428.748s428.748 191.951 428.748 428.748h18.995c176.869 0 320.257 143.374 320.257 320.257 0 88.441-35.854 168.502-93.797 226.473-57.957 57.943-138.032 93.797-226.459 93.797H576.257z"/></svg>
+                    <svg  viewBox="0 0 2048 2048" width="150px" style="enable-background:new 0 0 2048 2048" xml:space="preserve"><path style="fill:rgb(35, 71, 231)" d="M576.257 1390.887C399.388 1390.887 256 1247.5 256 1070.617c0-88.441 35.854-168.502 93.797-226.459 57.957-57.957 138.032-93.797 226.459-93.797h18.995c0-236.797 191.951-428.748 428.748-428.748s428.748 191.951 428.748 428.748h18.995c176.869 0 320.257 143.374 320.257 320.257 0 88.441-35.854 168.502-93.797 226.473-57.957 57.943-138.032 93.797-226.459 93.797H576.257z"/></svg>
 
                     <svg  viewBox="0 0 2048 2048" width="70px" style="enable-background:new 0 0 2048 2048" xml:space="preserve"><path style="fill:rgb(226, 16, 16)" d="M576.257 1390.887C399.388 1390.887 256 1247.5 256 1070.617c0-88.441 35.854-168.502 93.797-226.459 57.957-57.957 138.032-93.797 226.459-93.797h18.995c0-236.797 191.951-428.748 428.748-428.748s428.748 191.951 428.748 428.748h18.995c176.869 0 320.257 143.374 320.257 320.257 0 88.441-35.854 168.502-93.797 226.473-57.957 57.943-138.032 93.797-226.459 93.797H576.257z"/></svg>
                     </div>
@@ -72,18 +73,24 @@
 </div>
 
 <!-- end cloud section -->
-<!--   todolist   -->
 
 <div class="to-do-section"> 
 <div class="todo"  id="todo">To Do List <img class="check" src="./pics/1.png"></div>
 <div class="list" id="list">   
-<input type="text" id="input">
-<button id="add"> Add</button></div>
-    <!--todolist tasks  -->
+<input type="text" id="input" >
+<button id="add"> Add </button>
+<button id="clear"> Clear All </button></div>
 
-<div class="task" id="task"> 
+
+<div class="task" id="task">
+    <h1 class="inprogress" id="progress">inprogress</h1>
+    <div class="unchecked" id="uncheck">    </div>
+    <h1 class="done">Done</h1>
+    <div class="checked" id="check"> 
 </div>
-
+    
+</div>
+</div>
 </div> 
     <script src="./js/todolist.js"></script>
 </body>
