@@ -204,9 +204,9 @@ button{
 }
 /* responsive */
 @media (max-width:800px){
-
-.todo{
-    font-size: 1rem;
+.div{ max-width:90%}
+body {
+    font-size:20px;
 }
 input{
    width: 200px;
